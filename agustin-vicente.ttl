@@ -17,7 +17,7 @@ ex:Vicho a ex:Estudiante ;
     foaf:homepage "https://github.com/elvixooo" ;
     foaf:knows ex:BenitoFuentes, ex:aragreVnaitsabeS, ex:Agus ;
     ex:estudiaEn wikidata:Q232141 ;
-    rdfs:comment "Recurso que representa al estudiante Vicente Ignacio Thiele Muñoz" .
+    rdfs:comment "Recurso que representa al estudiante Vicente Ignacio Thiele Muñoz"@es .
 
 ex:Agus a foaf:Estudiante ;
     foaf:name "Agustin Eduardo Gonzalez Hidalgo" ;
@@ -26,7 +26,7 @@ ex:Agus a foaf:Estudiante ;
     foaf:homepage "https://github.com/awastinatus" ;
     foaf:knows ex:BenitoFuentes, ex:aragreVnaitsabeS, ex:Vicho ;
     ex:estudiaEn wikidata:Q232141 ;
-    rdfs:comment "Recurso que representa al estudiante Agustin Eduardo Gonzalez Hidalgo" .
+    rdfs:comment "Recurso que representa al estudiante Agustin Eduardo Gonzalez Hidalgo"@es .
 
 ex:Estudiante rdfs:subClassOf foaf:Person ;
     rdfs:label "Estudiante"@es ;
