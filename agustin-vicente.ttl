@@ -1,0 +1,33 @@
+@prefix ex: <http://example.com/> .
+@prefix foaf: <http://xmlns.com/foaf/spec/#> .
+@prefix wikidata: <http://www.wikidata.org/entity/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+ex:estudiaEn rdfs:range wikidata:Q130388971 ;
+    rdfs:domain ex:Estudiante ;
+    rdfs:comment "Relación entre estudiante y universidad, dando a entender que el estudiante estudia en esa universidad"@es ;
+    rdfs:label "Estudia en"@es ;
+    rdfs:label "Studies at"@en .
+
+ex:Vicho a ex:Estudiante ;
+    foaf:name "Vicente Ignacio Thiele Muñoz" ;
+    foaf:mbox "vthielemunoz@gmail.com" ;
+    foaf:img "https://cl.pinterest.com/pin/45599014976159236/" ;
+    foaf:homepage "https://github.com/elvixooo" ;
+    foaf:knows ex:BenitoFuentes, ex:aragreVnaitsabeS, ex:Agus ;
+    ex:estudiaEn wikidata:Q232141 ;
+    rdfs:comment "Recurso que representa al estudiante Vicente Ignacio Thiele Muñoz" .
+
+ex:Agus a foaf:Estudiante ;
+    foaf:name "Agustin Eduardo Gonzalez Hidalgo" ;
+    foaf:mbox "agustinatus@gmail.com" ;
+    foaf:img "https://cl.pinterest.com/pin/207306389092194466/" ;
+    foaf:homepage "https://github.com/awastinatus" ;
+    foaf:knows ex:BenitoFuentes, ex:aragreVnaitsabeS, ex:Vicho ;
+    ex:estudiaEn wikidata:Q232141 ;
+    rdfs:comment "Recurso que representa al estudiante Agustin Eduardo Gonzalez Hidalgo" .
+
+ex:Estudiante rdfs:subClassOf foaf:Person ;
+    rdfs:label "Estudiante"@es ;
+    rdfs:label "Student"@en .
